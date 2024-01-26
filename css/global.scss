@@ -1,4 +1,5 @@
 @import "colors";
+
 // global fonts & colors
 * {
   font-family: Verdana, sans-serif;
@@ -28,7 +29,7 @@ p {
 
 // flex box
 .container {
-  padding: 0rem 5rem; // left & right spacing
+  padding: 1rem 5rem; // left & right spacing
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -45,18 +46,13 @@ p {
   justify-content: space-around;
 }
 .link a {
-  padding: 1.25rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding-bottom: 0.5rem;
   text-decoration: none;
 }
-
-// hero
-button {
-  font-size: 16px;
-  background-color: $dark-orange;
-  color: $beige;
-  border-radius: 3rem;
-  padding: 12px 3rem;
-  border-width: 0rem;
+.emphasis {
+  border-bottom: 2px solid $dark-orange;
 }
 
 // main body
@@ -77,12 +73,13 @@ section {
 }
 
 .card-text {
-  float: right; // !!! can we use float here??
+  text-align: right;
   position: relative;
   top: -6rem;
   padding: 2rem 2rem;
   color: $white;
 }
+
 // footer
 footer h2 {
   margin-bottom: 2rem;

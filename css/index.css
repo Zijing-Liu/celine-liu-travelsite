@@ -15,6 +15,15 @@
   padding: 0rem 0rem 0rem 8rem;
 }
 
+button {
+  font-size: 16px;
+  background-color: #db7a4e;
+  color: #fefaf5;
+  border-radius: 3rem;
+  padding: 12px 3rem;
+  border-width: 0rem;
+}
+
 .recommendation {
   background-color: #ffffff;
 }
