@@ -32,7 +32,6 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-
 .container__nav {
   position: sticky;
   background-color: #ffffff;
@@ -59,14 +58,10 @@ section {
 }
 
 .container__card {
+  display: flex;
   margin: 2rem 10rem;
   align-items: center;
   justify-content: space-between;
-}
-
-.card {
-  width: 30%;
-  border-radius: 5px;
 }
 
 footer h2 {

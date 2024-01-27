@@ -1,4 +1,4 @@
-@import "colors";
+@use "../particals/variables" as *;
 
 // global fonts & colors
 * {
@@ -34,13 +34,13 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  &__nav {
+    position: sticky;
+    background-color: $white;
+  }
 }
 
 // nav
-.container__nav {
-  position: sticky;
-  background-color: $white;
-}
 .link {
   display: flex;
   justify-content: space-around;
@@ -61,14 +61,10 @@ section {
 }
 
 .container__card {
+  display: flex;
   margin: 2rem 10rem;
   align-items: center;
   justify-content: space-between;
-}
-
-.card {
-  width: 30%;
-  border-radius: 5px;
 }
 
 // footer

@@ -1,4 +1,6 @@
-@import "colors";
+@use "../particals/variables" as *;
+// @import url("partials/variables");
+
 .container__hero {
   gap: 3rem;
 }
@@ -30,17 +32,31 @@ button {
   background-color: $white;
 }
 
-.card img {
-  width: 100%;
+.card {
+  width: 30%;
+  padding-bottom: 50%;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-}
-
-.card-text {
-  text-align: right;
+  box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.2);
   position: relative;
-  top: -4rem;
-  padding: 1rem;
-  color: $white;
+
+  &--Hawaii {
+    background-image: url("../assets/Images/hawaii.jpg");
+    background-size: cover;
+  }
+  &--Iceland {
+    background-image: url("../assets/Images/iceland.jpg");
+    background-size: cover;
+  }
+  &--Greece {
+    background-image: url("../assets/Images/greece.jpg");
+    background-size: cover;
+  }
+  &__text {
+    position: absolute;
+    text-align: right;
+    bottom: 1rem;
+    right: 1rem;
+    color: $white;
+  }
 }
