@@ -21,6 +21,10 @@ p {
   font-style: normal;
 }
 
+body {
+  width: 1280px;
+}
+
 .container {
   padding: 1rem 5rem;
   display: flex;

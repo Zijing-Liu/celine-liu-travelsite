@@ -1,6 +1,19 @@
 @use "../particals/variables" as *;
 // @import url("partials/variables");
 
+.destination-itinerary {
+  background-image: url("/assets/Images/hawaii.jpg");
+  background-position: center;
+  background-size: cover;
+
+  &--greece {
+    background-image: url("/assets/Images/greece.jpg");
+  }
+  &--iceland {
+    background-image: url("/assets/Images/greece.jpg");
+  }
+}
+
 h1 {
   color: white;
   font-size: 4rem;
@@ -9,13 +22,12 @@ h1 {
 
 .destination-itinerary {
   width: 100vw;
-  padding: 3rem 0rem 6rem 0rem;
+  max-width: 100%;
+  padding: 2rem 0rem 5rem 0rem;
   display: flex;
-
   flex-direction: column;
-  background-image: url("/assets/Images/hawaii.jpg");
-  background-size: 100vw 100vh;
 }
+
 .container {
   &__card {
     &--itinerary {
