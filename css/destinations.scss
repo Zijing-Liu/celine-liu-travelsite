@@ -37,7 +37,9 @@ h1 {
     }
   }
 }
-
+ul {
+  list-style-type: none;
+}
 .itinerary__item {
   padding: 1rem 0rem;
   background-color: $beige;

@@ -30,6 +30,10 @@ h1 {
   text-align: center;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .itinerary__item {
   padding: 1rem 0rem;
   background-color: #fefaf5;
