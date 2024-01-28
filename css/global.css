@@ -42,7 +42,7 @@ p {
 .container__card {
   display: flex;
   justify-content: space-between;
-  margin: 2rem 12rem;
+  margin: 2rem 10rem;
   padding: 0;
 }
 
