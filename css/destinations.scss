@@ -1,0 +1,50 @@
+@use "../particals/variables" as *;
+// @import url("partials/variables");
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.destination-itinerary {
+  width: 100vw;
+  padding: 3rem 0rem 6rem 0rem;
+  display: flex;
+
+  flex-direction: column;
+  background-image: url("/assets/Images/hawaii.jpg");
+  background-size: 100vw 100vh;
+}
+.container {
+  &__card {
+    &--itinerary {
+      padding: 1rem 6rem;
+      align-items: stretch;
+      text-align: center;
+    }
+  }
+}
+
+.itinerary__item {
+  padding: 1rem 0rem;
+  background-color: $beige;
+  margin: 1rem;
+}
+
+.itinerary__title {
+  color: black;
+  font-size: $card-heading;
+  font-weight: bold;
+  border-bottom: 2px black solid;
+  margin: 1rem;
+}
+
+.card {
+  &--itinerary {
+    background-color: white;
+    height: fit-content;
+    text-align: center;
+    padding: 1rem 0.5rem 3rem 0.5rem;
+  }
+}

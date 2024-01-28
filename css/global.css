@@ -14,10 +14,6 @@ h2 {
   font-size: 1.5rem;
 }
 
-h3 {
-  font-size: 1rem;
-}
-
 p {
   font-size: 16px;
   line-height: 150%;
@@ -28,13 +24,26 @@ p {
 .container {
   padding: 1rem 5rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .container__nav {
   position: sticky;
+  align-items: baseline;
   background-color: #ffffff;
+}
+.container__hero {
+  gap: 3rem;
+}
+.container__footer {
+  justify-content: space-evenly;
+  padding: 3rem 0rem;
+}
+.container__card {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 12rem;
+  padding: 0;
 }
 
 .link {
@@ -57,11 +66,32 @@ section {
   padding: 3rem 0rem;
 }
 
-.container__card {
-  display: flex;
-  margin: 2rem 10rem;
-  align-items: center;
-  justify-content: space-between;
+.card {
+  position: relative;
+  width: 30%;
+  height: 56vh;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.2);
+}
+.card--Hawaii {
+  background-image: url("../assets/Images/hawaii.jpg");
+  background-size: cover;
+}
+.card--Iceland {
+  background-image: url("../assets/Images/iceland.jpg");
+  background-size: cover;
+}
+.card--Greece {
+  background-image: url("../assets/Images/greece.jpg");
+  background-size: cover;
+}
+.card__text {
+  position: absolute;
+  text-align: right;
+  bottom: 1rem;
+  right: 1rem;
+  color: #ffffff;
 }
 
 footer h2 {
@@ -70,11 +100,6 @@ footer h2 {
 
 footer {
   background-color: #fefaf5;
-}
-
-.container__footer {
-  justify-content: space-evenly;
-  padding: 3rem 0rem;
 }
 
 .column__hours {
